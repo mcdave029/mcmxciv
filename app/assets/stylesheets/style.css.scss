@@ -2,9 +2,12 @@
 /*$baseFontFamily:Inconsolata;
 @import url(http://fonts.googleapis.com/css?family=Inconsolata);*/
 
-/*$btn-primary-bg: green;*/ /*declare variables in less*/
-/*$navbar-height : 40px;*/ /*declare variables in less*/
-/*@import 'bootstrap';
+$btn-primary-bg: green; /*declare variables in less*/
+$navbar-height: 40px; /*declare variables in less*/
+$navbar-default-bg : white;
+$navbar-default-border: white;
+
+@import 'bootstrap';
 
 body{
 	padding-top:60px;
@@ -23,4 +26,4 @@ nav{
 	border: 1px solid;
     border-color: #e3e3e3 transparent transparent; 
 	text-align: center;
-}*/
+}
