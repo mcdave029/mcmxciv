@@ -35,6 +35,7 @@
   line-height: 1.5;
   margin:7px 0px;
   border-radius: 3px;
+  border-style: none;
 }
 
 .simple_form div.boolean label, .simple_form label.collection_radio {
