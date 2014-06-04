@@ -1,5 +1,9 @@
+<% if user_signed_in? %>
+<h1 class="text-info">Welcome User you're now logged in!</h1>
+<% else %>
 <h3>Welcome to My First Application</h3>
 
 <p>
-	<%= link_to "Sign Up now!", "#" , class: "btn btn-sm btn-success" %>
+	<%= link_to "Sign Up now!", new_user_registration_path , class: "btn btn-sm btn-success" %>
 </p>
+<% end %>
