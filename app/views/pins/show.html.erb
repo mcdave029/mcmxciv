@@ -1,17 +1,17 @@
 <div class="row">
 	<div class="col-md-6 col-md-offset-3">
 		<div class="well well-sm">
-		<%= image_tag @pin.image %>
-			<p>
+		<%= image_tag @pin.image(:medium), style: "width:100%" %>
+			<p class="text-info">
 			  <%= @pin.description %>
 			</p>
-			<p>
-			  <%= @pin.user.name %>
-			</p>
+			<div class="btn-group">
 			<% if current_user == @pin.user %>
-			<%= link_to 'Edit', edit_pin_path(@pin) %> |
+			<%= link_to 'Edit', edit_pin_path(@pin), class: "btn btn-primary" %>
 			<% end %>
-			<%= link_to 'Back', pins_path %>
+			<%= link_to 'Back', pins_path, class: "btn btn-primary" %>
+			</div>
 		</div>
 	</div>
 </div>
+</br>

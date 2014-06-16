@@ -38,6 +38,11 @@ Mc::Application.configure do
   #required for devise
   config.action_mailer.default_url_options = { host: 'localhost:3000' }
 
-  #paperclip thing
-  Paperclip.options[:command_path] = "/usr/local/bin/"
+  #application.rb
+  Paperclip.options[:log] = true
+  Paperclip.options[:log_command] = true
+  Paperclip.options[:command_path] = "/usr/local/bin"
+
+  # config.consider_all_requests_local = true
+  BetterErrors::Middleware.allow_ip! ENV['TRUSTED_IP'] if ENV['TRUSTED_IP']
 end

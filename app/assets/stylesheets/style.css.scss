@@ -4,14 +4,34 @@
 
 $btn-primary-bg: green; /*declare variables in less*/
 $navbar-height: 40px; /*declare variables in less*/
-$navbar-default-bg : white;
+$navbar-default-bg : rgba(255,255,255, 0.7);
 $navbar-default-border: white;
+$navbar-default-link-hover-color: black;
+$navbar-default-link-color:black;
+$navbar-default-color: black;
+$well-bg: rgba(255,255,255, 0.7);
+
 
 @import 'bootstrap';
 
 body{
 	padding-top:60px;
+	background: url('leo.jpg')no-repeat center center fixed; 
+         -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
 }
+
+.hori{
+		   position: fixed;
+		   left: 0;
+       background-color: rgba(255,255,255,0.6);
+       width: 100%;
+       height: 330px;
+       padding:0 100px 0 100px;
+    }
+
 nav{
 	padding-left: 30px;
 	padding-right: 30px;
@@ -50,4 +70,8 @@ nav{
 
 .description{
 	margin: 10px 0 5px;
+}
+
+input[type="file"] {
+  display: inline-block;
 }

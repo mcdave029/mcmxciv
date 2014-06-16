@@ -5,6 +5,7 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'simple_form'
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+gem 'mysql', '~> 2.9.1'
 
 group :production do
   gem 'pg'
@@ -12,6 +13,8 @@ end
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 group :assets do
